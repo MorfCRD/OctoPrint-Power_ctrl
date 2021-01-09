@@ -1,0 +1,16 @@
+<div class="input-append">
+    <input type="text" class="input-xxlarge" data-bind="value: newUrl_check">
+    <button class="btn btn-primary" data-bind="click: goToUrl_check">{{ _('Check') }}</button>
+</div>
+
+<div class="input-append">    
+    <input type="text" class="input-xxlarge" data-bind="value: newUrl_on">
+    <button class="btn btn-primary" data-bind="click: goToUrl_on">{{ _('On') }}</button>
+</div>
+
+<div class="input-append">
+    <input type="text" class="input-xxlarge" data-bind="value: newUrl_off">
+    <button class="btn btn-primary" data-bind="click: goToUrl_off">{{ _('Off') }}</button>
+</div>
+
+<iframe data-bind="attr: {src: currentUrl}"></iframe>
